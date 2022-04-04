@@ -7,9 +7,6 @@ int main() {
     cout << "Quanto vuoi lunga la serie numerica di Fibonacci?" << endl;
     cin >> n;
 
-    if(n<2){
-        cout << "errore" << endl;
-    }else{
         for(int variabile=0;variabile<n;variabile++){
             terzo_n=primo_n+secondo_n;
             secondo_n=primo_n;
@@ -21,7 +18,6 @@ int main() {
                 break;
             }
         }
-    }
 
     return 0;
 }
