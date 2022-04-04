@@ -14,9 +14,10 @@ int main() {
             terzo_n=primo_n+secondo_n;
             secondo_n=primo_n;
             primo_n=terzo_n;
-            if(terzo_n<=n){
+            if(terzo_n<n){
                 cout << terzo_n << "\n";
             }else{
+                cout << n << endl;
                 break;
             }
         }
