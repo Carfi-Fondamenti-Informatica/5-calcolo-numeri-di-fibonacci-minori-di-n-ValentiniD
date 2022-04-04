@@ -7,21 +7,17 @@ int main() {
     cout << "Quanto vuoi lunga la serie numerica di Fibonacci?" << endl;
     cin >> n;
 
-    if(n>0){
-        for(int variabile=0;variabile<n;variabile++){
-            terzo_n=primo_n+secondo_n;
-            secondo_n=primo_n;
-            primo_n=terzo_n;
-            if(terzo_n<n){
-                cout << terzo_n << "\n";
-            }else{
-                cout << n << endl;
-                break;
-            }
+    if(n==1){
+        cout << "1" << endl;
         }
-    }else{
-        cout << n << endl;
+    for(int terzo_n=0;terzo_n<=n;terzo_n++){
+        terzo_n=primo_n+secondo_n;
+        if(terzo_n<=n){
+            cout << terzo_n << endl;
+        }
+        secondo_n=primo_n;
+        primo_n=terzo_n;
     }
-
+        
     return 0;
 }
